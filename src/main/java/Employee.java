@@ -11,7 +11,12 @@ public abstract class Employee {
     }
 
     public String getName() {
-        return name;
+        if (name == null) {
+            return "You need to enter a name";
+        }
+        else {
+            return name;        }
+
     }
 
     public String getNin() {
@@ -36,7 +41,11 @@ public abstract class Employee {
 
 
     public double raiseSalary(double value){
-        return salary + value;
+        if (value > 0) {
+            return salary + value;
+        }
+        else
+            return salary + (value * -1);
     }
 
     public double payBonus(){
