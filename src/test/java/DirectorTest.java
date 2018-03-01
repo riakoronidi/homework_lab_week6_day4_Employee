@@ -22,9 +22,15 @@ public class DirectorTest {
         assertEquals(210.00, director.raiseSalary(10),0.01);
     }
 
+//    this was before payBonus overrides the Employee class
+//    @Test
+//    public void canHaveBonus(){
+//        assertEquals(202.00, director.payBonus(),0.01);
+//    }
+
     @Test
-    public void canHaveBonus(){
-        assertEquals(202.00, director.payBonus(),0.01);
+    public void newBonus(){
+        assertEquals(204, director.payBonus(),0.01);
     }
 
 }

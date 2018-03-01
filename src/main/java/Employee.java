@@ -2,7 +2,7 @@ public abstract class Employee {
 
     private String name;
     private String nin;
-    private double salary;
+    double salary;
 
     public Employee(String name, String nin, double salary) {
         this.name = name;
